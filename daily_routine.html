@@ -1,33 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kun tartibi</title>
-    <!-- css -->
     <link rel="stylesheet" href="daily_routine.css">
-    <!-- Cdnjs -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <i class="fa-solid fa-list-check"></i>
-            <ul>
-                <li>
-                    <a href="">Topshiriq qo'shish</a>
-                </li>
-                <li>
-                    <a href="">Topshiriqlarni korish</a>
-                </li>
-                <li>
-                    <a href="">Biz bilan boglanish</a>
-                </li>
-            </ul>
-            <h2>Biz bilan kelajagingizni quring</h2>
-        </nav>
+        <div class="contanier">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                    <h3 class="nav__title">Kun tartibi</h3>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Topshiriq qo'shish</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Topshiriqlarni ko'rish</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Biz bilan bog'lanish</a>
+                    </li>
+                </ul>
+                <button class="nav__btn" type="button">Fon rangini o'zgartirish</button>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="contanier">
+                <div class="hero__text">
+                    <h1>Kun tartibi</h1>
+                    <p>
+                        Har bir kuningiz maqsadga yo'naltirilgan bo'lsin.
+                        Har kuni ertalab muhim vazifalaringizni yozib qo'ying.
+                        Kun oxirida "Bajarildi" yoki "Bajarilmadi" deb belgilang.
+                        Bu harakat sizning eng kuchli o'zgarish vositangizga aylanadi —
+                        yozilgan maqsad unutilmaydi. Belgilangan natija sizni
+                        ertangi kun uchun kuchliroq qiladi.
+                    </p>
+                    <p>
+                        Kun tartibi — shunchaki ro'yxat emas. Bu o'zingizga bergan
+                        va'dangiz. Har bir "Bajarildi" sizni maqsadingizga bir qadam
+                        yaqinlashtiradi, "Bajarilmadi" esa — qayerda kuchliroq bo'lish
+                        kerakligini ko'rsatadi. Bu ikki daqiqalik odat hayotingizni
+                        o'zgartiradi.
+                    </p>
+                    <div class="hero__btns">
+                        <button type="button">Topshiriq qo'shish</button>
+                        <button type="button">Ko'proq ma'lumot</button>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/f6aa38235719195.68dd0579558c4.jpg"
+                        alt="Kun tartibi ilovasi ko'rinishi">
+                </div>
+            </div>
+        </section>
+
+        <section class="form_todo">
+            <div class="contanier">
+                <div class="form_info">
+                    <h2>Topshiriq qo'shish bo'limi</h2>
+                    <p>Yangi topshiriq qo'shish uchun quyidagi 3 ta maydonni to'ldiring:</p>
+                    <ol>
+                        <li>
+                            <strong>Topshiriq nomini kiriting</strong>
+                            <p>Masalan: "Ingliz tili darsi", "Kitob o'qish", "Sport mashqi"</p>
+                        </li>
+                        <li>
+                            <strong>Boshlash va tugatish vaqtini belgilang</strong>
+                            <p>Topshiriqni qachon boshlab, qachon tugatishingizni kiriting</p>
+                        </li>
+                        <li>
+                            <strong>To'liq ma'lumot yozing</strong>
+                            <p>Topshiriq haqida qo'shimcha izoh yoki eslatma qoldiring</p>
+                        </li>
+                    </ol>
+                    <div class="form_info__note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>
+                            Kun oxirida har bir topshiriqni
+                            <strong>"Bajarildi"</strong> yoki
+                            <strong>"Bajarilmadi"</strong>
+                            deb belgilashni unutmang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <h3>Topshiriq qo'shish</h3>
+                        <label for="form_title">Topshiriq nomi</label>
+                        <input id="form_title" type="text" placeholder="Masalan: Kitob o'qish">
+                        <div class="time_todo">
+                            <div class="start_time">
+                                <label class="lbl_start" for="start">Boshlash vaqtini kiriting</label>
+                                <input class="start" id="start" type="time">
+                            </div>
+                            <div class="end_time">
+                                <label class="lbl_end" for="end">Tugatish vaqtini kiriting</label>
+                                <input class="end" id="end" type="time">
+                            </div>
+                        </div>
+                        <label for="form_body">To'liq ma'lumot</label>
+                        <textarea name="form_body" id="form_body"
+                            placeholder="Topshiriq haqida qo'shimcha izoh..."></textarea>
+                        <button class="form_btn" type="submit">Topshiriq qo'shish</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="daily_routine.js"></script>
 </body>
 
