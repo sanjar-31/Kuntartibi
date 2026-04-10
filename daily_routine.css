@@ -249,6 +249,7 @@ header {
 
 .form_info ol li {
     color: #1a1a2e;
+    margin-bottom: 20px;
 }
 
 .form_info ol li strong {
@@ -414,4 +415,174 @@ header {
     background-color: #3730a3;
     box-shadow: 0 2px 10px rgba(79, 70, 229, 0.3);
     transform: translateY(0px) scale(0.98);
+}
+
+/* ─── About ─────────────────────────────────────── */
+
+.about {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.about .abaut_contanier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.about__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Sarlavha ostidagi chiziq */
+.about__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background-color: #4f46e5;
+    border-radius: 2px;
+}
+
+.about__desc {
+    font-size: 17px;
+    color: #555770;
+    line-height: 2;
+    max-width: 680px;
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+
+.footer {
+    background-color: #1a1a2e;
+    padding: 70px 0 0 0;
+}
+
+.footer__top {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__brand {
+    flex: 2;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.footer__logo i {
+    font-size: 22px;
+    color: #4f46e5;
+}
+
+.footer__logo h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer__brand p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.8;
+    max-width: 300px;
+}
+
+.footer__links,
+.footer__contact {
+    flex: 1;
+}
+
+.footer__links h4,
+.footer__contact h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer__links ul,
+.footer__contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__links ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    transition: color 0.25s ease;
+}
+
+.footer__links ul li a:hover {
+    color: #ffffff;
+}
+
+.footer__contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__contact ul li i {
+    font-size: 14px;
+    color: #4f46e5;
+    width: 16px;
+}
+
+/* ─── Footer bottom ──────────────────────────────── */
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__bottom p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__bottom p:last-child {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* ─── Footer contact fix ──────────────────────────── */
+
+.footer__contact ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    transition: color 0.25s ease;
+}
+
+.footer__contact ul li a:hover {
+    color: #ffffff;
+}
+
+.footer__contact ul li span {
+    color: rgba(255, 255, 255, 0.55);
 }
