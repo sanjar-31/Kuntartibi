@@ -19,13 +19,16 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="crated_todo">Topshiriq qo'shish</a>
+                        <a class="nav__link" href="#created_todo">Topshiriq qo'shish</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Topshiriqlarni ko'rish</a>
+                        <a class="nav__link" href="#box_todo_cards"">Topshiriqlarni ko'rish</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Biz bilan bog'lanish</a>
+                        <a class="nav__link" href="#abaut">Batafsil malumot</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#footer">Biz bilan bog'lanish</a>
                     </li>
                 </ul>
                 <button class="nav__btn" type="button">Fon rangini o'zgartirish</button>
@@ -54,8 +57,8 @@
                         o'zgartiradi.
                     </p>
                     <div class="hero__btns">
-                        <button type="button">Topshiriq qo'shish</button>
-                        <button type="button">Ko'proq ma'lumot</button>
+                        <a href="#created_todo" type="button">Topshiriq qo'shish</a>
+                        <a href="#abaut" type="button">Ko'proq ma'lumot</a>
                     </div>
                 </div>
                 <div class="hero__img">
@@ -118,10 +121,16 @@
                 </div>
             </div>
         </section>
-        <section id="todo_cards" class="todo_cards">
-            
+        <section id="box_todo_cards" class="box_todo_cards">
+            <div class="contanier">
+                <div class="todo_cards_title">
+                    <h1>Har kungi topshiriqlar</h1>
+                </div>
+                <div id="todo_cards" class="todo_cards">
+                </div>
+            </div>
         </section>
-        <section class="about">
+        <section id="abaut" class="about">
             <div class="abaut_contanier">
                 <h1 class="about__title">Batafsil ma'lumot</h1>
                 <p class="about__desc">
@@ -135,7 +144,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="contanier">
             <div class="footer__top">
                 <div class="footer__brand">
@@ -149,10 +158,10 @@
                 <div class="footer__links">
                     <h4>Sahifalar</h4>
                     <ul>
-                        <li><a href="#">Topshiriq qo'shish</a></li>
-                        <li><a href="#">Topshiriqlarni ko'rish</a></li>
-                        <li><a href="#">Batafsil ma'lumot</a></li>
-                        <li><a href="#">Biz bilan bog'lanish</a></li>
+                        <li><a href="#created_todo">Topshiriq qo'shish</a></li>
+                        <li><a href="#box_todo_cards">Topshiriqlarni ko'rish</a></li>
+                        <li><a href="#abaut">Batafsil ma'lumot</a></li>
+                        <li><a href="#footer">Biz bilan bog'lanish</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">

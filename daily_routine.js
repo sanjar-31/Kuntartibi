@@ -31,12 +31,12 @@ function created_new_todo() {
       return;
     }
 
-    if (todo_title.value.length > 50) {
+    if (todo_title.value.length > 60) {
       alert("Topshiriq nomi 50-ta harf yoki belgidan oshmasligi shart !");
       return;
     }
 
-    if (todo_body.value.length > 150) {
+    if (todo_body.value.length > 200) {
       alert("Topshiriq malumoti 150-ta harf yoki belgidan oshmasligi shart !");
       return;
     }
@@ -67,7 +67,7 @@ function all_todos() {
 
     todo_card.classList.add("todo_card");
 
-    todo_card = `
+    todo_card.innerHTML = `
         <h3>${todo.title}</h3>
         <p>${todo.body}</p>
         <div class="todo_time">
@@ -82,10 +82,24 @@ function all_todos() {
         </div>
         <div class="todo_btns">
            <button class="upd_btn">Topshiriqni ozgartirish</button>
-           <button class="delete_btn">Topshiriqni o'chirish</button>
+           <button id="${todo.id}" class="delete_btn">Topshiriqni o'chirish</button>
         </div>    
     `;
     todo_cards.append(todo_card);
+    console.log(todos);
   });
 }
 all_todos();
+
+//Delete todo 
+function delete_todo(){
+  todo_cards.addEventListener("click", e => {
+    if(e.target.classList.contains("delete_btn")){
+       const delete_id = Number(e.target.id);
+       todos = todos.filter(todo => todo.id !== delete_id);
+       all_todos();
+    }
+  })
+}
+delete_todo();
+
