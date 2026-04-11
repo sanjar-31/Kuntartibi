@@ -22,10 +22,10 @@
                         <a class="nav__link" href="#created_todo">Topshiriq qo'shish</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#box_todo_cards"">Topshiriqlarni ko'rish</a>
+                        <a class="nav__link" href="#box_todo_cards">Topshiriqlarni ko'rish</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#abaut">Batafsil malumot</a>
+                    <li class=" nav__item">
+                            <a class="nav__link" href="#abaut">Batafsil malumot</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#footer">Biz bilan bog'lanish</a>
@@ -130,6 +130,27 @@
                 </div>
             </div>
         </section>
+        <section class="box_upd_form">
+            <div class="upd_form">
+                <form action="">
+                    <h3>Topshiriqni ozgartirish</h3>
+                    <label for="upd_form_title">Topshiriq nomi</label>
+                    <input id="upd_form_title" type="text" placeholder="Masalan: Kitob o'qish">
+                    <div class="upd_time_todo">
+                        <div class="upd_start_time">
+                            <label class="lbl_start" for="upd_start">Boshlash vaqtini kiriting</label>
+                            <input class="upd_start" id="upd_start" type="time">
+                        </div>
+                        <div class="upd_end_time">
+                            <label class="upd_lbl_end" for="upd_end">Tugatish vaqtini kiriting</label>
+                            <input class="upd_end" id="upd_end" type="time">
+                        </div>
+                    </div>
+                    <label for="upd_form_body">To'liq ma'lumot</label>
+                    <textarea name="upd_form_body" id="upd_form_body"
+                        placeholder="Topshiriq haqida qo'shimcha izoh..."></textarea>
+                    <button id="upd_todo_btn" class="upd_form_btn" type="submit">O'zgartirish</button>
+        </section>
         <section id="abaut" class="about">
             <div class="abaut_contanier">
                 <h1 class="about__title">Batafsil ma'lumot</h1>
@@ -169,7 +190,8 @@
                     <ul>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
-                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">quliyevsanjar3101@gmail.com</a>
+                            <a
+                                href="https://mail.google.com/mail/u/0/#inbox?compose=new">quliyevsanjar3101@gmail.com</a>
                         </li>
                         <li>
                             <i class="fa-brands fa-telegram"></i>
