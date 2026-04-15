@@ -387,7 +387,7 @@ header {
 
 .form_info ol li {
     color: var(--text-primary);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .form_info ol li strong {
@@ -1027,4 +1027,613 @@ header {
     transform: scale(0.98);
     opacity: 1;
     box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+}
+
+
+
+/* Responsive */
+
+/* ─── 1200px — Katta noutbuk ──────────────────────── */
+@media (max-width: 1200px) {
+
+    .contanier {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero .contanier {
+        gap: 40px;
+    }
+
+    .hero__text h1 {
+        font-size: 40px;
+    }
+
+    .hero__img img {
+        max-width: 440px;
+        height: 360px;
+    }
+
+    /* Form Todo */
+    .form_todo .contanier {
+        gap: 32px;
+    }
+
+    /* Footer */
+    .footer__top {
+        gap: 40px;
+    }
+}
+
+/* ─── 992px — Kichik noutbuk / Planshet gorizontal ── */
+@media (max-width: 992px) {
+
+    /* Nav */
+    .nav__list {
+        gap: 18px;
+    }
+
+    .nav__link {
+        font-size: 13px;
+    }
+
+    .nav__btn {
+        padding: 9px 16px;
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 100px 0 70px;
+    }
+
+    .hero .contanier {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero__text {
+        align-items: center;
+    }
+
+    .hero__text h1 {
+        font-size: 38px;
+    }
+
+    .hero__text p {
+        max-width: 600px;
+    }
+
+    .hero__btns {
+        justify-content: center;
+    }
+
+    .hero__img img {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    /* Form Todo */
+    .form_todo {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .form_todo .contanier {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .form_info,
+    .form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* About */
+    .about {
+        padding: 80px 0;
+    }
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    .about__desc {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer__top {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .footer__brand {
+        flex: 1 1 100%;
+    }
+
+    .footer__links,
+    .footer__contact {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+/* ─── 768px — Planshet vertikal ──────────────────── */
+@media (max-width: 768px) {
+
+    /* Nav — hamburger tayyorlanadi */
+    .nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        position: relative;
+    }
+
+    .nav__list {
+        display: none; /* JS bilan yoqsa bo'ladi, lekin hozir yashiramiz */
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--bg-primary);
+        border-top: 1px solid var(--border-color);
+        padding: 8px 0;
+    }
+
+    .nav__item {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav__link {
+        display: block;
+        padding: 12px 0;
+        font-size: 14px;
+    }
+
+    .nav__link::after {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 90px 0 60px;
+    }
+
+    .hero__text h1 {
+        font-size: 32px;
+    }
+
+    .hero__text p {
+        font-size: 14px;
+    }
+
+    .hero__btns a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .hero__img img {
+        height: 260px;
+        border-radius: 12px;
+    }
+
+    /* Form */
+    .form_info {
+        padding: 24px 20px;
+    }
+
+    .form_info h2 {
+        font-size: 20px;
+    }
+
+    .form {
+        padding: 24px 20px;
+    }
+
+    .form form h3 {
+        font-size: 18px;
+    }
+
+    /* Time inputs */
+    .time_todo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Cards */
+    .box_todo_cards {
+        padding: 60px 0 40px;
+    }
+
+    .todo_cards_title {
+        margin-bottom: 40px;
+    }
+
+    .todo_cards_title h1 {
+        font-size: 24px;
+    }
+
+    .todo_card {
+        width: 100%;
+        max-width: 340px;
+        margin: 12px 8px;
+    }
+
+    /* About */
+    .about {
+        padding: 70px 0;
+    }
+
+    .about__title {
+        font-size: 26px;
+    }
+
+    .about__title::after {
+        width: 140px;
+    }
+
+    .about__desc {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 0 0;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        gap: 28px;
+        padding-bottom: 36px;
+    }
+
+    .footer__brand,
+    .footer__links,
+    .footer__contact {
+        flex: unset;
+        width: 100%;
+    }
+
+    .footer__brand p {
+        max-width: 100%;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Update Modal */
+    .upd_form {
+        padding: 0.75rem;
+    }
+
+    .upd_form form {
+        max-width: 100%;
+    }
+
+    .upd_time_todo {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* ─── 576px — Katta telefon ──────────────────────── */
+@media (max-width: 576px) {
+
+    .contanier {
+        padding: 0 16px;
+    }
+
+    /* Header */
+    header {
+        padding: 12px 0;
+    }
+
+    .nav__logo h3 {
+        font-size: 17px;
+    }
+
+    .nav__logo i {
+        font-size: 20px;
+    }
+
+    .nav__btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 0 50px;
+    }
+
+    .hero__text h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .hero__text p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .hero__btns {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero__btns a {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+        border-radius: 10px;
+    }
+
+    .hero__img img {
+        height: 220px;
+    }
+
+    /* Form Todo */
+    .form_todo {
+        padding: 50px 0;
+    }
+
+    .form_info {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .form_info h2 {
+        font-size: 18px;
+    }
+
+    .form_info > p {
+        font-size: 13px;
+    }
+
+    .form_info ol li strong {
+        font-size: 14px;
+    }
+
+    .form_info ol li p {
+        font-size: 12px;
+    }
+
+    .form_info__note {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .form_info__note p {
+        font-size: 12px;
+    }
+
+    .form {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .form form h3 {
+        font-size: 17px;
+    }
+
+    .form form label {
+        font-size: 12px;
+    }
+
+    .form form input[type="text"],
+    .form form textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .form_btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    /* Cards */
+    .todo_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo_card {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about__title {
+        font-size: 22px;
+    }
+
+    .about__title::after {
+        width: 110px;
+        bottom: -8px;
+    }
+
+    .about__desc {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 0;
+    }
+
+    .footer__logo h3 {
+        font-size: 17px;
+    }
+
+    .footer__logo i {
+        font-size: 18px;
+    }
+
+    .footer__brand p {
+        font-size: 13px;
+    }
+
+    .footer__links h4,
+    .footer__contact h4 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .footer__links ul li a,
+    .footer__contact ul li {
+        font-size: 13px;
+    }
+
+    .footer__bottom p {
+        font-size: 12px;
+    }
+
+    /* Update Modal */
+    .upd_form form h3 {
+        font-size: 15px;
+        padding: 1rem 1.25rem;
+    }
+
+    .upd_form form > label,
+    .upd_form form > input,
+    .upd_form form > textarea,
+    .upd_time_todo {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .upd_form_btn {
+        width: calc(100% - 2.5rem);
+        margin: 1rem 1.25rem 1.25rem;
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    #upd_form_body {
+        padding: 8px 1.25rem;
+        height: 70px;
+    }
+}
+
+/* ─── 400px — Kichik telefon ─────────────────────── */
+@media (max-width: 400px) {
+
+    .contanier {
+        padding: 0 12px;
+    }
+
+    /* Nav */
+    .nav__logo h3 {
+        font-size: 15px;
+    }
+
+    .nav__btn {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+
+    /* Hero */
+    .hero__text h1 {
+        font-size: 22px;
+    }
+
+    .hero__text p {
+        font-size: 12px;
+    }
+
+    .hero__btns a {
+        padding: 11px 16px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    .hero__img img {
+        height: 190px;
+    }
+
+    /* Form */
+    .form_info,
+    .form {
+        padding: 16px 14px;
+        border-radius: 10px;
+    }
+
+    .form_info h2 {
+        font-size: 16px;
+    }
+
+    .form form h3 {
+        font-size: 15px;
+    }
+
+    .form form input[type="text"],
+    .form form textarea {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .form_btn {
+        padding: 12px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    /* Cards */
+    .todo_card {
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .todo_card h3 {
+        font-size: 13px;
+    }
+
+    .todo_card > p {
+        font-size: 11px;
+    }
+
+    .upd_btn,
+    .delete_btn {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    /* About */
+    .about__title {
+        font-size: 20px;
+    }
+
+    .about__desc {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer__brand p,
+    .footer__links ul li a,
+    .footer__contact ul li {
+        font-size: 12px;
+    }
+
+    .footer__bottom p {
+        font-size: 11px;
+    }
 }
